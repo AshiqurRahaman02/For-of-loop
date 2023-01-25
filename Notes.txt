@@ -1,0 +1,30 @@
+A for...of loop is a type of loop in JavaScript that is used to iterate over the elements of an iterable object, such as an array. The syntax for a for...of loop is as follows:
+
+Syntax
+for (variable of iterable) {
+  // code to be executed
+}
+`variable` is a new variable that will be created for each iteration of the loop and will be assigned the value of the next element in the iterable. iterable is the object that you want to iterate over.
+
+Here's an example of using a `for...of` loop to iterate over an array:
+
+
+let arr = [1, 2, 3, 4, 5];
+for (let item of arr) {
+  console.log(item);
+}
+This will output the following:
+
+
+1
+2
+3
+4
+5
+
+
+`for...of` loops are often used when you want to iterate over the elements of an array, or other iterable objects such as a string, set, or map.
+
+It's important to note that `for...of` loop only iterates over iterable object's values , not key or index.
+
+If you need the key or index, `for...in` loop or `forEach()` method with an arrow function would be a good choice.
